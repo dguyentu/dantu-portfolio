@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>Dan Tu</title>
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+	<meta name="viewport" content="width=device-width" />
+
+	<!--     Fonts and icons     -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+
+	<!-- Bootstrap core CSS     -->
+	<link rel="stylesheet"
+		href="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/css/bootstrap.min.css">
+	<link href="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/css/now-ui-kit.min.css?v1.2.0"
+		rel="stylesheet" />
+	<link href="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/demo/demo.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/aos.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- aos.css -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+	<!-- favicon -->
+	<link rel="icon" href="./img/favicon.ico">
+</head>
+
+<body class="index-page sidebar-collapse">
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg bg-pink-blue fixed-top navbar-transparent " color-on-scroll="200">
+		<div class="container">
+			<div class="navbar-translate">
+				<a class="navbar-brand" href="javascript:void(0)" onclick="scrollToHome()" rel="tooltip"
+					title="Effective and Productivity" data-placement="bottom" target="_blank">
+
+				</a>
+				<img src="./img/blossom_white.jpg" style="height: 45px;" alt="">
+				<button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse"
+					data-target="#navigation" aria-controls="navigation-index" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-bar bar1"></span>
+					<span class="navbar-toggler-bar bar2"></span>
+					<span class="navbar-toggler-bar bar3"></span>
+				</button>
+
+			</div>
+
+			<div class="collapse navbar-collapse justify-content-end" data-nav-image="./assets/img/blurred-image-1.jpg">
+
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="javascript:void(0)" onclick="scrollToHome()">
+							<i class=""></i>
+							<p>Home</p>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="javascript:void(0)" onclick="scrollToAbout()">
+							<i class=""></i>
+							<p>About</p>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="javascript:void(0)" onclick="scrollToPortfolio()">
+							<i class=""></i>
+							<p>Portfolio</p>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="javascript:void(0)" onclick="scrollToClients()">
+							<i class=""></i>
+							<p>Happy Clients</p>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="javascript:void(0)" onclick="scrollToContact()">
+							<i class=""></i>
+							<p>Contact</p>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" rel="tooltip" title="Checkout my Github!" data-placement="bottom"
+							href="https://github.com/dguyentu" target="_blank">
+							<i class="fa fa-github"></i>
+							<p class="d-lg-none d-xl-none">Twitter</p>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" rel="tooltip" title="Follow me on Twitter" data-placement="bottom"
+							href="https://twitter.com/unccleDan" target="_blank">
+							<i class="fa fa-twitter"></i>
+							<p class="d-lg-none d-xl-none">Twitter</p>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" rel="tooltip" title="Add me on Facebook" data-placement="bottom"
+							href="https://www.facebook.com/daniel.tu.710/" target="_blank">
+							<i class="fa fa-facebook-square"></i>
+							<p class="d-lg-none d-xl-none">Facebook</p>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" rel="tooltip" title="Follow me on Instagram" data-placement="bottom"
+							href="https://www.instagram.com/d_guyen/" target="_blank">
+							<i class="fa fa-instagram"></i>
+							<p class="d-lg-none d-xl-none">Instagram</p>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" rel="tooltip" title="Let's Connect on LinkedIn" data-placement="bottom"
+							href="https://www.linkedin.com/in/daniel-tu-08081614a/" target="_blank">
+							<i class="fa fa-linkedin"></i>
+							<p class="d-lg-none d-xl-none">LinkedIn</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- End Navbar -->
+	<div class="wrapper">
+		<div class="page-header clear-filter" filter-color="pink-blue">
+			<div class="page-header-image" data-parallax="true" style="background-image: url('img/header.jpg');">
+			</div>
+			<div class="container">
+				<div class="content-center brand">
+
+					<h1 class="h1-seo">Hello 👋🏼, I'm <strong>Dan Tu</strong>.</h1>
+					<h3>I'm a full-stack web developer.</h3>
+					<button type="button" class="btn" href="javascript:void(0)" onclick=scrollToAbout()>View My
+						Work</button>
+				</div>
+			</div>
+		</div>
+		<!--  -->
+		<div class="modal fade" id="modalProject1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+			style="display: none;" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header justify-content-center">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+							<i class="now-ui-icons ui-1_simple-remove"></i>
+						</button>
+						<h4 class="title title-up">Angular Project</h4>
+					</div>
+					<div class="modal-body">
+						<p><img src="https://s3.amazonaws.com/creativetim_bucket/products/77/original/opt_nuk_angular_thumbnail.jpg?1520507715"
+								alt="Image" class="img-raised card"></p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, labore dolore maxime
+							temporibus natus facere molestias est enim debitis neque sapiente unde iure quasi culpa
+							eaque. Ratione error quidem recusandae.</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-pink-blue">More Detail</button>
+						<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="modalProject2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+			style="display: none;" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header justify-content-center">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+							<i class="now-ui-icons ui-1_simple-remove"></i>
+						</button>
+						<h4 class="title title-up">Albany Med Route Finder</h4>
+					</div>
+					<div class="modal-body">
+						<p><img src="./img/amc2.jpg" alt="Image" class="img-raised card"></p>
+						<p>Designed, deployed and maintained a simple mobile app ie. Albany Med RouteFinder utilizing
+							React Native. The app provides an easy to use UI for maps, walking & driving directions,
+							hidden shortcuts as
+							well as ideal parking locations across the hospital campus. <br> <br>
+							<strong>Technologies Used:</strong> <br>
+							HTML & CSS <br>
+							React Native <br>
+							Node.js <br>
+							MongoDB</p>
+
+
+
+					</div>
+					<div class="modal-footer">
+						<a href="https://www.amc.edu/maps_directions/faq.cfm" target="_blank"><button type="button"
+								class="btn btn-pink-blue">More Info</button></a>
+						<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="modalProject3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+			style="display: none;" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header justify-content-center">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+							<i class="now-ui-icons ui-1_simple-remove"></i>
+						</button>
+						<h4 class="title title-up">JavaScript Interview Pro</h4>
+					</div>
+					<div class="modal-body">
+						<p><img src="./img/jspro2.jpg" alt="Image" class="img-raised card"></p>
+						<p>This service is an automated subscription based email newsletter for Software Developers.
+							Base plan is completely free! There is an option to upgrade to a premium membership plan to
+							verify
+							solutions and receive
+							time-space complexity analysis. <br> This online service has generated me an additional side
+							income of about $2k per month in recurring revenue
+							since I launched it back in Jan 2020. <br> <br>
+
+							<strong>Website Built Using:</strong> <br>
+							HTML & CSS <br>
+							Python (Task Automations as Cron Jobs) <br>
+							PostgreSQL <br>
+
+
+							<br>
+							<strong>Web Services:</strong><br>
+							sendinblue (Email Marketing Automations) <br>
+							Amazon Web Services / Simple Email Service <br>
+							Stripe (Online Payments)
+
+
+						</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-pink-blue">Visit Site</button>
+						<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="modalProject4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+			style="display: none;" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header justify-content-center">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+							<i class="now-ui-icons ui-1_simple-remove"></i>
+						</button>
+						<h4 class="title title-up">Angular Project</h4>
+					</div>
+					<div class="modal-body">
+						<p><img src="https://s3.amazonaws.com/creativetim_bucket/products/68/original/opt_pk2p_angular_thumbnail.jpg?1513356549"
+								alt="Image" class="img-raised card"></p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, labore dolore maxime
+							temporibus natus facere molestias est enim debitis neque sapiente unde iure quasi culpa
+							eaque. Ratione error quidem recusandae.</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-pink-blue">More Detail</button>
+						<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="modalProject5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+			style="display: none;" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header justify-content-center">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+							<i class="now-ui-icons ui-1_simple-remove"></i>
+						</button>
+						<h4 class="title title-up">Vue Project</h4>
+					</div>
+					<div class="modal-body">
+						<p><img src="https://s3.amazonaws.com/creativetim_bucket/products/91/original/opt_nukp_vue_thumbnail.jpg?1534959644"
+								alt="Image" class="img-raised card"></p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, labore dolore maxime
+							temporibus natus facere molestias est enim debitis neque sapiente unde iure quasi culpa
+							eaque. Ratione error quidem recusandae.</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-pink-blue">More Detail</button>
+						<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="modalProject6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+			style="display: none;" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header justify-content-center">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+							<i class="now-ui-icons ui-1_simple-remove"></i>
+						</button>
+						<h4 class="title title-up">React Project</h4>
+					</div>
+					<div class="modal-body">
+						<p><img src="https://s3.amazonaws.com/creativetim_bucket/products/90/original/opt_argon_thumbnail.jpg?1535139813"
+								alt="Image" class="img-raised card"></p>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, labore dolore maxime
+							temporibus natus facere molestias est enim debitis neque sapiente unde iure quasi culpa
+							eaque. Ratione error quidem recusandae.</p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-pink-blue">More Detail</button>
+						<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main">
+			<!-- ABOUT -->
+			<div class="section section-basic w-icons" id="productivity">
+
+				<div class="container text-center mt-5">
+					<div class="">
+						<h2 class="title" data-aos="fade-down">About</h2>
+						<hr class="hr1">
+						<h5></h5>
+					</div>
+
+
+					<div class="row">
+						<div class="col-md">
+							<i class="fa fa-tachometer fa-5x" data-aos="fade-right"></i>
+							<h6 data-aos="zoom-in">FAST</h6>
+							<p data-aos="fade-left">Fast load times and lag free interaction, my highest priority.</p>
+						</div>
+						<div class="col-md">
+							<i class="fa fa-window-restore fa-5x" data-aos="fade-right"></i>
+							<h6 data-aos="zoom-in">RESPONSIVE</h6>
+							<p data-aos="fade-left">My layouts will work on any device, big or small.</p>
+						</div>
+						<div class="col-md">
+							<i class="fa fa-lightbulb-o fa-5x" data-aos="fade-right"></i>
+							<h6 data-aos="zoom-in">INTUITIVE</h6>
+							<p data-aos="fade-left"> I have a strong preference for easy to use, intuitive UX/UI.</p>
+						</div>
+						<div class="col-md">
+							<i class="fa fa-fighter-jet fa-5x" data-aos="fade-right"></i>
+							<h6 data-aos="zoom-in">DYNAMIC</h6>
+							<p data-aos="fade-left">Websites don't have to be static & BORING, I love making modern
+								pages come to life.</p>
+						</div>
+
+					</div>
+
+
+
+					<div class="text-center" id="">
+						<div class="container">
+
+							<div class="row">
+								<div class="col-md">
+									<div class="testimonial-item" data-aos="fade-right">
+										<img class="rounded-circle img-raised" src="img/testimonials-1.jpg"
+											style="height: 300px; width: 250px;" alt="">
+										<h5><strong>Who's This Guy?</strong></h5>
+										<p class="mb-0">I'm a Front-End Developer for Zones LLC in <br> Auburn, WA. I
+											have serious passion for UI effects, animations and creating intuitive,
+											dynamic user experiences.</p>
+									</div>
+								</div>
+
+								<div class="col-md" data-aos="fade-left">
+									<br>
+									<br>
+									<h3><Strong>Programming Languages</Strong></h3>
+									<div class="">
+										<h4>HTML</h4>
+										<h4>CSS | CSS3 | SCSS</h4>
+										<h4>JavaScript | REACT.js | NODE.js</h4>
+										<h4>Python</h4>
+										<h4>PostgreSQL</h4>
+										<h4>MongoDB</h4>
+
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+
+
+
+					<!-- Actions -->
+					<div class="section" id="actions">
+						<div class="container">
+							<div class="title text-center">
+								<h2 data-aos="fade-down-left">Portfolio</h2>
+								<h5></h5>
+							</div>
+
+							<!--  -->
+							<div class="row justify-content-center">
+
+								<div class="row productivity-row">
+									<div class="col-md">
+										<h3>Disney+ Clone</h3>
+										<a href="#" target="_blank" data-toggle="modal" data-target="#modalProject1">
+											<img src="https://s3.amazonaws.com/creativetim_bucket/products/77/original/opt_nuk_angular_thumbnail.jpg?1520507715"
+												alt="Image" class="img-raised card">
+										</a>
+										<a href="#" class="btn btn-pink-blue" data-toggle="modal"
+											data-target="#modalProject1">View Project</a>
+									</div>
+									<div class="col-md">
+										<h3>Albany Med RouteFinder</h3>
+										<a href="#" target="_blank" data-toggle="modal" data-target="#modalProject2">
+											<img src="./img/amc.jpg" alt="Image" class="img-raised card">
+										</a>
+										<button class="btn btn-pink-blue" data-toggle="modal"
+											data-target="#modalProject2">View Project</button>
+									</div>
+									<div class="col-md">
+										<h3>JavaScript Interview Pro</h3>
+										<a href="#" target="_blank" data-toggle="modal" data-target="#modalProject3">
+											<img src="./img/jspro.jpg" alt="Image" class="img-raised card">
+										</a>
+										<button class="btn btn-pink-blue" data-toggle="modal"
+											data-target="#modalProject3">View Project</button>
+									</div>
+								</div>
+								<!-- TOGGLE COLLAPSE -->
+								<p>
+
+									<button class="btn" type="button" data-toggle="collapse"
+										data-target="#collapseExample" aria-expanded="false"
+										aria-controls="collapseExample">
+										See More
+									</button>
+								</p>
+								<div class="collapse" id="collapseExample">
+									<!-- END OF COLLAPSE -->
+									<div class="row productivity-row">
+										<div class="col-md">
+											<a href="#" target="_blank" data-toggle="modal"
+												data-target="#modalProject4">
+												<img src="https://s3.amazonaws.com/creativetim_bucket/products/68/original/opt_pk2p_angular_thumbnail.jpg?1513356549"
+													alt="Image" class="img-raised card">
+											</a>
+											<a href="#" class="btn btn-pink-blue" data-toggle="modal"
+												data-target="#modalProject1">View Project</a>
+										</div>
+										<div class="col-md">
+											<a href="#" target="_blank" data-toggle="modal"
+												data-target="#modalProject5">
+												<img src="https://s3.amazonaws.com/creativetim_bucket/products/91/original/opt_nukp_vue_thumbnail.jpg?1534959644"
+													alt="Image" class="img-raised card">
+											</a>
+											<button class="btn btn-pink-blue" data-toggle="modal"
+												data-target="#modalProject2">View Project</button>
+										</div>
+										<div class="col-md">
+											<a href="#" target="_blank" data-toggle="modal"
+												data-target="#modalProject6">
+												<img src="https://s3.amazonaws.com/creativetim_bucket/products/90/original/opt_argon_thumbnail.jpg?1535139813"
+													alt="Image" class="img-raised card">
+											</a>
+											<button class="btn btn-pink-blue" data-toggle="modal"
+												data-target="#modalProject3">View Project</button>
+										</div>
+									</div>
+								</div>
+								<!--  -->
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Happy Clients -->
+			<div class="text-center" id="testimonials">
+				<div class="container">
+					<h2 class="title" data-aos="fade-down-right">Happy Clients</h2>
+					<div class="row">
+						<div class="col-md">
+							<div class="testimonial-item">
+								<a href="https://www.biginburma.com/" target="_blank"><img
+										class="rounded-circle img-raised" src="img/action-02.jpg" alt=""></a>
+								<h5>Big In Burma</h5>
+								<p class="mb-0">"We've known Dan since his high school days! Friendly, easy going and
+									always helpful. His websites are modern and beautiful. We're already seeing more
+									foot traffic to our restaurant since launch!" <br>-<strong>Myo & Thanda San</strong>
+								</p>
+								<a href="https://www.biginburma.com/" target=_blank class="btn btn-pink-blue">Visit</a>
+							</div>
+						</div>
+						<div class="col-md">
+							<div class="testimonial-item">
+								<a href="https://dguyentu.github.io/samSnaps/" target="_blank"><img
+										class="rounded-circle img-raised" src="img/sam.jpg" alt=""></a>
+								<h5>Sam's Snapshots</h5>
+								<p class="mb-0">"Speechless, I was crying. As a small business owner a website
+									contributes so much to your brand image and sales revenue. I'll be recommending Dan
+									to
+									everyone I know."<br>-<strong>Sam Cook</strong></p>
+								<a href="https://dguyentu.github.io/samSnaps/" target="_blank"
+									class="btn btn-pink-blue">Visit</a>
+							</div>
+						</div>
+						<div class="col-md">
+							<div class="testimonial-item">
+								<a href="https://onondagatraveler.com/" target=_blank><img
+										class="rounded-circle img-raised" src="img/lil.jpg" alt=""></a>
+								<h5>Onondaga Traveler</h5>
+								<p class="mb-0">"When I hired Dan to create a blog I had no idea that it would turn
+									out so beautiful. It was everything I wanted and more! Easy to use catalog system
+									and
+									modern designs, what more can you ask for?" <br>-<strong>Lil Truong</strong></p>
+								<a href="https://onondagatraveler.com/" class="btn btn-pink-blue"
+									target=_blank>Visit</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="contact" data-aos="flip-up">
+			<h2 class="title">Let's Get In Touch!</h2>
+			<div class="row">
+				<div class="col-md container col-form-contact subscribe">
+					<div class="text-center">
+						<h4 class="">
+							Phone: <a href="tel:3153831515">315-383-1515 </a> <br>
+							Email: <a href="mailto:tudan58@gmail.com">tudan58@gmail.com</a> <br>
+							<a href="https://www.linkedin.com/feed/?trk=homepage-basic_google-one-tap-submit"><i
+									class="fa fa-linkedin"></i></a>
+
+						</h4> <br>
+
+						<a href="./img/DanTu_Resume.pdf" class="btn btn-pink-blue btn-subscribe" target="_blank"
+							download>Download Resume</a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md">
+
+				</div>
+			</div>
+		</div>
+
+		<div class="main">
+			<footer class="footer" data-background-color="pink-blue">
+				<div class="container">
+					<div class="copyright">
+						<a href="https://www.linkedin.com/in/daniel-tu-08081614a/" target="_blank">Dan Tu</a>
+						©
+						<script>
+
+							document.write(new Date().getFullYear())
+						</script>
+
+					</div>
+				</div>
+			</footer>
+		</div>
+</body>
+
+<!--   Core JS Files   -->
+<script src="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/js/core/jquery.min.js"></script>
+<script src="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/js/core/popper.min.js"></script>
+<script src="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/js/core/bootstrap.min.js"></script>
+<!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+<script
+	src="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/js/plugins/bootstrap-switch.js"></script>
+<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+<script
+	src="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/js/plugins/nouislider.min.js"></script>
+<!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
+<script
+	src="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/js/plugins/bootstrap-datepicker.js"></script>
+<!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
+<script src="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/js/now-ui-kit.js"></script>
+<script src="js/main.js"></script>
+<script src="./js/aos.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+	AOS.init();
+</script>
+
+</html>
